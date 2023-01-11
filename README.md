@@ -1,4 +1,4 @@
-# TP2---Jeux de mots-Synthse et analyse spectrale d'une gamme de musique
+# TP2---Jeux de mots - Synthése et analyse spectrale d'une gamme de musique
 ## Objectifs
  -  Comprendre comment manipuler un signal audio avec Matlab, en effectuant certaines opérations classiques sur un fichier audio d’une phrase enregistrée via un smartphone.
 -  Comprendre la notion des sons purs à travers la synthèse et l’analyse spectrale d’une gamme de musique.
