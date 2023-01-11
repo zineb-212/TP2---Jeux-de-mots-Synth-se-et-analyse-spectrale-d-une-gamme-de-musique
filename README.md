@@ -10,8 +10,7 @@
  
  1-Chargement du fichier avec la commande *audioread*.
  ```matlab
- [y,fs]=audioread("audio.opus");
- 
+[y,fs]=audioread("jeudemots.wav"); 
 ```
 2-Representation du signal en fonction du temps,
 
@@ -52,6 +51,7 @@ https://user-images.githubusercontent.com/121026257/211888452-476e0d05-7999-430d
  sound(rien_ne_sert_de,fs);
 ```
 <img width="823" alt="2" src="https://user-images.githubusercontent.com/121026257/211888973-358b45af-e9b2-4387-8a7c-b8373e8965b6.PNG">
+
 https://user-images.githubusercontent.com/121026257/211890095-47fcc2a2-71a1-4ce2-9681-e2193c880682.mp4
 
 6-Segmentation de toute la phrase et son réordonnement.
@@ -106,12 +106,13 @@ https://user-images.githubusercontent.com/121026257/211894374-d1311e32-6fa1-4b93
 
 - **Synthèse d’une gamme de musique**
 
-2-Utilisation de l'outil *SignalAnalyzer* por tracer le spectre et le spectrogramme de la gamme
+2-Utilisation de l'outil *SignalAnalyzer* pour tracer le spectre et le spectrogramme de la gamme
 
 <img width="545" alt="3" src="https://user-images.githubusercontent.com/121026257/211925256-cca0af2b-5dc9-4546-93a0-16a8ed67729b.PNG">
 
 - **Approximation du spectre d’un signal sinusoïdal à temps continu**
 >Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT).
+
 4- Affichage du spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
 ```matlab
  DS=abs(fft(gamme));
@@ -129,4 +130,7 @@ https://user-images.githubusercontent.com/121026257/211894374-d1311e32-6fa1-4b93
 >Avec une échelle en décibels
 <img width="806" alt="5" src="https://user-images.githubusercontent.com/121026257/211927607-857c0421-76f5-4197-af84-66505f5c6510.PNG">
 
-# 
+# Réalisation 
+#### Par : M'HIFED Zineb
+#### Spécialité : Robotique et Cobotique
+#### Sous la supervision de : Pr AMMOUR Alae
