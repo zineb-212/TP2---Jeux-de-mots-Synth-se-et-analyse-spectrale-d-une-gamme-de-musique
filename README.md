@@ -22,6 +22,7 @@
  t = (0:N-1)*ts;
  plot(t,y)
 ```
+<img width="811" alt="1" src="https://user-images.githubusercontent.com/121026257/211885620-b186c0ad-b91e-4b01-a731-775e0203b5f1.PNG">
 
  >Lecture de l'audio.
  
@@ -30,6 +31,7 @@
  sound(y,fs)
 
 ```
+
 3- Cette commande permet d’écouter la phrase à sa fréquence d’échantillonnage d’enregistrement. Ecoutez la phrase en modifiant la fréquence d’échantillonnage à double ou deux fois plus petite pour vous faire parler comme « Terminator » ou « Donald Duck ». En effet, modifier la fréquence d’échantillonnage revient à appliquer un changement d’échelle y(t) = x(at) en fonction de la valeur du facteur d’échelle, cela  revient à opérer une compression ou une dilatation du spectre initial d’où la version plus grave ou plus aigüe du signal écouté.
 ```matlab
  
