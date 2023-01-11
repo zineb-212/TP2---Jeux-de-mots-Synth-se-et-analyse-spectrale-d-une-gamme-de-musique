@@ -43,14 +43,16 @@ https://user-images.githubusercontent.com/121026257/211887930-d070e4c2-7529-4171
 ```matlab 
 sound(y,fs*0.5); %Terminator
 ```
+https://user-images.githubusercontent.com/121026257/211888452-476e0d05-7999-430d-a781-0b49c47690af.mp4
 
 4- Tracez le signal en fonction des indices du vecteur x, puis essayez de repérer les indices de début et de fin de la phrase « Rien ne sert de ».
 
 ```matlab
-rien_ne_sert_de = y(5055:76000);
-plot(rien_ne_sert_de);
-title('Rien ne sert de');
+rien_ne_sert_de = y(5055:158000);
+ plot(rien_ne_sert_de);
+ title('Rien ne sert de');
 ```
+
 
 5- Pour segmenter le premier mot, il faut par exemple créer un vecteur « riennesertde »contenant les n premières valeurs du signal enregistré x qui correspondent à ce 
 morceau. Créez ce vecteur, puis écoutez le mot segmenté.
