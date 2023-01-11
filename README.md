@@ -27,9 +27,7 @@
  >Lecture de l'audio.
  
 ```matlab
- 
- sound(y,fs)
-
+sound(y,fs)
 ```
 https://user-images.githubusercontent.com/121026257/211887058-985249c4-4bc5-454a-bec1-916bde2567f8.mp4
 
@@ -80,15 +78,10 @@ https://user-images.githubusercontent.com/121026257/211891174-c65c37c7-4fcd-429b
 | 262 Hz  | 294 Hz  | 330 Hz  | 349 Hz  | 392 Hz  | 440 Hz  | 494 Hz  | 523 Hz  |
 
 ```matlab
- clear all
-  close all
-  clc
-
-  fe=8192; %La fréquence d’échantillonnage
+  fe=8192; %fréquence d’échantillonnage
   te=1/fe;
   ts=0:te:1;
-   
-    %La fréquence de chaque note de la gamme
+  % fréquence de chaque note 
   fdol=262;
   fRe=294;
   fMi=330;
@@ -106,10 +99,11 @@ https://user-images.githubusercontent.com/121026257/211891174-c65c37c7-4fcd-429b
   LA=sin(2*fLa*pi*ts);
   SI=sin(2*fSi*pi*ts); 
   DO2=sin(2*fDo2*pi*ts);
-  lagamme=[DOl RE MI FA SOL LA SI DO2];
-  
-  sound (lagamme, fe ) ;
+  gamme=[DOl RE MI FA SOL LA SI DO2];
+  sound (gamme,fe) ;
 ```
+
+
 - **Synthèse d’une gamme de musique**
 
 2- Utilisez l’outil graphique d’analyse de signaux signalAnalyzer pour visualiser le spectre de votre gamme. Observez les 8 fréquences contenues dans la gamme et vérifiez leur valeur numérique à l’aide des curseurs.
