@@ -46,7 +46,7 @@ sound(y,fs*0.5); %Terminator
 https://user-images.githubusercontent.com/121026257/211888452-476e0d05-7999-430d-a781-0b49c47690af.mp4
 
 
-5-Creation d'un segment contenant la partie *"Rien ne sert de"* et sa lecture
+5-Creation d'un segment contenant la partie *"Rien ne sert de"* et sa lecture.
 ```matlab
  rien_ne_sert_de = y(5055:158000);
  plot(rien_ne_sert_de);
@@ -54,15 +54,18 @@ https://user-images.githubusercontent.com/121026257/211888452-476e0d05-7999-430d
  sound(rien_ne_sert_de,fs);
 ```
 <img width="823" alt="2" src="https://user-images.githubusercontent.com/121026257/211888973-358b45af-e9b2-4387-8a7c-b8373e8965b6.PNG">
+https://user-images.githubusercontent.com/121026257/211890095-47fcc2a2-71a1-4ce2-9681-e2193c880682.mp4
 
-
-6- Segmentez cette fois-ci toute la phrase en créant les variables suivantes : riennesertde, courir, ilfaut, partirapoint.
+6-Segmentation de toute la phrase et son réordonnement.
 ```matlab
-rien_ne_sert_de = y(5055:76000);
-courir  = y(76000:95395);
-il_faut = y(95395:141652);
-partir_a_point  = y(141652:198500);
+rien_ne_sert_de = y(5055:158000);
+ courir  = y(158000:200000);
+ il_faut = y(200000:250670); 
+ partir_a_point  = y(250670:390760);
+ vect =[rien_ne_sert_de partir_a_point il_faut courir];
+ sound(vect,fs);
 ```
+
 
 7- Notez que le signal initial de parole est un vecteur colonne contenant un certain nombre de valeurs (length(x)). Réarrangez ce vecteur pour écouter la phrase synthétisée « Rien ne sert de partir à point, il faut courir ». 
 
