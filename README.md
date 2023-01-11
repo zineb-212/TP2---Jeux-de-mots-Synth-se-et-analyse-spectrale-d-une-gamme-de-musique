@@ -31,14 +31,19 @@
  sound(y,fs)
 
 ```
+https://user-images.githubusercontent.com/121026257/211887058-985249c4-4bc5-454a-bec1-916bde2567f8.mp4
 
-3- Cette commande permet d’écouter la phrase à sa fréquence d’échantillonnage d’enregistrement. Ecoutez la phrase en modifiant la fréquence d’échantillonnage à double ou deux fois plus petite pour vous faire parler comme « Terminator » ou « Donald Duck ». En effet, modifier la fréquence d’échantillonnage revient à appliquer un changement d’échelle y(t) = x(at) en fonction de la valeur du facteur d’échelle, cela  revient à opérer une compression ou une dilatation du spectre initial d’où la version plus grave ou plus aigüe du signal écouté.
-```matlab
- 
+3-Modification de la fréquence d’échantillonnage 
+>Compression
+```matlab 
 sound(y,2*Fs); %Donald Duck
-sound(y,Fs/2); %Terminator
-
 ```
+
+>Dilatation
+```matlab 
+sound(y,fs*0.5); %Terminator
+```
+
 4- Tracez le signal en fonction des indices du vecteur x, puis essayez de repérer les indices de début et de fin de la phrase « Rien ne sert de ».
 
 ```matlab
