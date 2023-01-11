@@ -106,32 +106,23 @@ https://user-images.githubusercontent.com/121026257/211894374-d1311e32-6fa1-4b93
 
 - **Synthèse d’une gamme de musique**
 
-2- Utilisez l’outil graphique d’analyse de signaux signalAnalyzer pour visualiser le spectre de votre gamme. Observez les 8 fréquences contenues dans la gamme et vérifiez leur valeur numérique à l’aide des curseurs.
+2-Utilisation de l'outil *SignalAnalyzer* por tracer le spectre et le spectrogramme de la gamme
 
->la Gamme
+<img width="545" alt="3" src="https://user-images.githubusercontent.com/121026257/211925256-cca0af2b-5dc9-4546-93a0-16a8ed67729b.PNG">
 
->le spectre
-
-3- Tracez le spectrogramme qui permet de visualiser le contenu fréquentiel du signal au cours du temps (comme le fait une partition de musique) mais la précision sur l’axe des fréquences n’est pas suffisante pour relever précisément les 8 fréquences.
-
-
-
-
-- **Approximation du spectre d’un signal sinusoïdal à temps continu par FFT**
-
-4- Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT). Afficher le spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
+- **Approximation du spectre d’un signal sinusoïdal à temps continu**
+>Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT).
+4- Affichage du spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
 ```matlab
-DS=abs(fft(gamme));
-N=length(gamme)
-subplot(2,1,1)
-plot(DS);
-title('Fft de la gamme');
-k=mag2db(DS);
-subplot(2,1,2)
-
-%avec une échelle en décibels.
-fshift=(-N/2:N/2 -1 )*fe/N;
-plot(fshift,fftshift(k));
+ DS=abs(fft(gamme));
+ N=length(gamme)
+ subplot(2,1,1)
+ plot(DS); %avec une échelle en linéaire.
+ k=mag2db(DS);
+ subplot(2,1,2)
+ fshift=(-N/2:N/2 -1 )*fe/N;
+ plot(fshift,fftshift(k)); %avec une échelle en décibels.
 ```
+
 
 # 
