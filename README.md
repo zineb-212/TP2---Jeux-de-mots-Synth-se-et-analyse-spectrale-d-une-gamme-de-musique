@@ -102,7 +102,7 @@ https://user-images.githubusercontent.com/121026257/211891174-c65c37c7-4fcd-429b
   gamme=[DOl RE MI FA SOL LA SI DO2];
   sound (gamme,fe) ;
 ```
-
+https://user-images.githubusercontent.com/121026257/211894374-d1311e32-6fa1-4b93-9fe6-b8d7c6ccca90.mp4
 
 - **Synthèse d’une gamme de musique**
 
