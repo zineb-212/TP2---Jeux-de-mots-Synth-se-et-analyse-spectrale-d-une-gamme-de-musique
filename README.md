@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/121026257/211887058-985249c4-4bc5-454a
 ```matlab 
 sound(y,2*Fs); %Donald Duck
 ```
-
+https://user-images.githubusercontent.com/121026257/211887930-d070e4c2-7529-4171-8663-ee692d3f25fe.mp4
 >Dilatation
 ```matlab 
 sound(y,fs*0.5); %Terminator
