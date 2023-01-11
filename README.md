@@ -65,15 +65,7 @@ rien_ne_sert_de = y(5055:158000);
  vect =[rien_ne_sert_de partir_a_point il_faut courir];
  sound(vect,fs);
 ```
-
-
-7- Notez que le signal initial de parole est un vecteur colonne contenant un certain nombre de valeurs (length(x)). Réarrangez ce vecteur pour écouter la phrase synthétisée « Rien ne sert de partir à point, il faut courir ». 
-
-```matlab
-vector =[rien_ne_sert_de ; partir_a_point ; il_faut ; courir];
-sound(vector,fs);
-```
-
+https://user-images.githubusercontent.com/121026257/211891174-c65c37c7-4fcd-429b-ba2d-b76c9bf7f5df.mp4
 
 # Synthèse et analyse spectrale d’une gamme de musique
 
