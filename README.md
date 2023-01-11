@@ -117,12 +117,16 @@ https://user-images.githubusercontent.com/121026257/211894374-d1311e32-6fa1-4b93
  DS=abs(fft(gamme));
  N=length(gamme)
  subplot(2,1,1)
- plot(DS); %avec une échelle en linéaire.
+ plot(DS); %avec une échelle linéaire.
  k=mag2db(DS);
  subplot(2,1,2)
  fshift=(-N/2:N/2 -1 )*fe/N;
  plot(fshift,fftshift(k)); %avec une échelle en décibels.
 ```
+>Avec une échelle linéaire
+<img width="820" alt="4" src="https://user-images.githubusercontent.com/121026257/211927571-24d797d4-ac94-479b-928e-7ad7acade117.PNG">
 
+>Avec une échelle en décibels
+<img width="806" alt="5" src="https://user-images.githubusercontent.com/121026257/211927607-857c0421-76f5-4197-af84-66505f5c6510.PNG">
 
 # 
