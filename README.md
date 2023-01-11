@@ -16,13 +16,12 @@
 2-Representation du signal en fonction du temps,
 
 ```matlab
-[y,fs]=audioread("audio.opus");
-N = length(y)
-ts = 1/fs
-t = (0:N-1)*ts;
-plot(t,y)
+ [y,fs]=audioread("jeudemots.wav");
+ N = length(y)
+ ts = 1/fs
+ t = (0:N-1)*ts;
+ plot(t,y)
 ```
-<img width="822" alt="1" src="https://user-images.githubusercontent.com/121026257/211832518-46149294-aa19-4097-ba05-8e03c73a8f94.PNG">
 
  >Lecture de l'audio.
  
